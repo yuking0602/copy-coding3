@@ -1,0 +1,124 @@
+@charset "utf-8";
+
+/* 共通 */
+body {
+  font-family: "Helvetica Neue",
+    Arial,
+    "Hiragino Kaku Gothic ProN",
+    "Hiragino Sans",
+    Meiryo,
+    sans-serif;
+}
+.section-title {
+  text-align: center;
+  font-size: 20px;
+  padding: 48px 0 16px 0;
+}
+
+/* header */
+header {
+  max-width: 1000px;
+  margin: 50px auto 0;
+}
+header h1 {
+  font-weight: normal;
+  font-size: 24px;
+}
+/* main-index */
+.index {
+  background: #eee;
+  max-width: 800px;
+  margin: 64px auto 48px;
+  padding-bottom: 32px;
+}
+/* .index h2 {
+  text-align: center;
+  font-size: 20px;
+  padding: 48px 0 16px 0;
+} */
+.wrapper {
+  border: 1px solid #777;
+  margin: 24px 6%;
+}
+.wrapper ol {
+  text-align: center;
+  padding-left: 0;
+
+}
+.wrapper ol li {
+  padding-top: 24px;
+  font-size: 14px;
+  list-style-position: inside;
+}
+
+/* main-images */
+.images {
+  max-width: 800px;
+  margin: 0 auto;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 16px;
+}
+.images img {
+  width: calc(800px / 2 - 8px);
+}
+
+/* detail */
+.detail {
+  max-width: 800px;
+  margin: 64px auto;
+  background: #eee;
+}
+.detail article {
+  padding: 40px 6%;
+  font-size: 14px;
+  display: flex;
+  justify-content: space-around;
+}
+.detail-left {
+  border-right: 1px solid #444;
+}
+.detail-left dl {
+  width: 220px;
+}
+.detail-right {
+  padding-left: 48px;
+}
+.detail-right p {
+  padding-bottom: 16px;
+}
+.detail-right a {
+  color: #444;
+}
+.detail-right a:hover {
+  color: #777;
+}
+
+/* footer */
+footer {
+  text-align: center;
+  margin-bottom: 16px;
+}
+
+/* メディアクエリ */
+@media screen and (max-width: 1024px) {
+  .images {
+    flex-direction: column;
+  }
+  .images img {
+    width: 600px;
+    margin: 0 auto;
+  }
+  .detail article {
+    flex-direction: column;
+  }
+  .detail-left {
+    border-right: none;
+    padding-bottom: 24px;
+    border-bottom: 1px solid #444;
+  }
+  .detail-right {
+    margin-top: 24px;
+    padding: 0;
+  }
+}
